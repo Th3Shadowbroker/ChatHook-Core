@@ -1,4 +1,6 @@
 ## ChatHook - Core
+![travis-ci-status](https://travis-ci.com/Th3Shadowbroker/ChatHook-Core.svg?branch=master)
+
 ChatHook is a tiny lib which implements Discords webhook API. This lib was made for the
 ChatHook plugins for Bukkit and Sponge but feel free to fork and add more futures in form
 of PRs.
