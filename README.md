@@ -15,9 +15,9 @@ Checkout the wiki for mor info on how to implement the ChatHook-core.
 <dependency>
     <groupId>io.m4taiori.chathook</groupId>
     <artifactId>chathook-core</artifactId>
-    <version>1.0.0</version>
+    <version>LATEST</version>
 </dependency>
-
+...
 <repository>
     <id>th3shadowbroker-releases</id>
     <url>https://nexus.m4taiori.io/repository/th3shadowbroker-releases/</url>
