@@ -35,14 +35,14 @@ public class ChatHook
 
     private final URL hookUrl;
 
-    private List<ChatHookEvent> listeners = new ArrayList<>();
+    private List<ChatHookListener> listeners = new ArrayList<>();
 
     public ChatHook(URL hookUrl)
     {
         this.hookUrl = hookUrl;
     }
 
-    public void addListener(ChatHookEvent event)
+    public void addListener(ChatHookListener event)
     {
         listeners.add(event);
     }
@@ -54,7 +54,7 @@ public class ChatHook
 
     private void notifyListeners(HookPacket packet, int httpResponse )
     {
-        listeners.forEach( listener -> listener.post( httpResponse, packet, this ) );
+        listeners.forEach( listener -> listener.postHookEvent( httpResponse, packet, this ) );
     }
 
     public void sendPacket(HookPacket packet) throws IOException
